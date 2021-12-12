@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,cAAc,AAAC,CACX,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,IAAI,CACb,qBAAqB,CAAE,cAAc,CACxC",
+    "sources": [
+        "deshboard.scss"
+    ],
+    "names": [],
+    "file": "deshboard.css"
+}

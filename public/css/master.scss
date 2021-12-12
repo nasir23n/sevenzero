@@ -1,0 +1,170 @@
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input:focus {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+// ::-webkit-scrollbar {
+//     width: 20px;
+// }
+
+// ::-webkit-scrollbar-track {
+//     background-color: transparent;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background-color: #d6dee1;
+//     border-radius: 20px;
+//     border: 6px solid transparent;
+//     background-clip: content-box;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//     background-color: #a8bbbf;
+// }
+
+/* Make nerrow and custom color scrollbar */
+::-webkit-scrollbar {
+    /* scrollbar width */
+    width: 8px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    /* scrollable area background */
+    background: #272822;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Make scroller thumb or scroll controller background */
+    background: #646461;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* scroll controller hoverd background */
+    background: #a0a098;
+}
+
+::-webkit-scrollbar-thumb:active {
+    /* scroll controller active background */
+    background: #646461;
+}
+
+.context {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    background: #ffffff;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
+.context li a {
+    display: block;
+    padding: 5px 10px;
+    transition: all 0.2s ease-in-out;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+.context li a i {
+    display: inline-block;
+    margin-right: 8px;
+}
+.context li a:hover {
+    background: #eeeeee;
+    padding-left: 15px;
+}
+
+// /* ------------------------------------ */
+
+$transition: all 0.2s ease-in-out;
+:root {
+    --aside: 230px;
+    --aside_m: -230px;
+}
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+.main_wrap {
+    display: flex;
+    background: #e6e6e6;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.heading {
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+
+.bg-fave {
+    background: #3345a9;
+    color: #ffffff;
+    &.btn:hover {
+        color: #ffffff !important;
+    }
+}
+.bg-fave-gradient {
+    background: linear-gradient(90deg, #3345a9, #673AB7);
+    color: #ffffff;
+    &.btn:hover {
+        color: #ffffff !important;
+    }
+}
+
+.check {
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    background: var(--success);
+    border-radius: 50%;
+}
+.check.danger {
+    background: var(--danger);
+}
+.check::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 4px;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    transform: rotate(-45deg);
+    margin-top: -1px;
+}
+
+@import 'components/aside';
+@import 'components/content';
+@import 'components/top_nav';
+@import 'components/nl_modal';
